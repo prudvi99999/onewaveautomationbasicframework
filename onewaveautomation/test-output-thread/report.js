@@ -1,14 +1,25 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "1264fdcb-a94b-460b-b23e-63ee42baf36b",
+    "id": "4347cdfc-f360-490d-a9b7-29e0a091eabf",
     "feature": "Reset functionality on login page of Application",
-    "scenario": "Verification of Reset button",
-    "start": 1634829714520,
-    "end": 1634829757711,
+    "scenario": "Verification of login function",
+    "start": 1635141902229,
+    "end": 1635141986072,
     "group": 1,
     "content": "",
-    "className": "passed",
+    "className": "failed",
+    "tags": ""
+  },
+  {
+    "id": "78658b5f-281d-428c-9d89-6201132f3bc9",
+    "feature": "Reset functionality on login page of Application",
+    "scenario": "Verification of login function",
+    "start": 1635141986151,
+    "end": 1635142032416,
+    "group": 1,
+    "content": "",
+    "className": "failed",
     "tags": ""
   }
 ]);

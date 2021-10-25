@@ -41,10 +41,12 @@ public class ApplicationHooks {
 	@After(order = 1)
 	public void tearDown(Scenario scenario) {
 		if (scenario.isFailed()) {
-			// take screenshot:
+			//take screenshot:
 			String screenshotName = scenario.getName().replaceAll(" ", "_");
 			byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-		//	scenario.attach(sourcePath, "image/png", screenshotName);
+			scenario.embed(sourcePath, "image/png", screenshotName);
+			
+		
 
 		}
 	}
